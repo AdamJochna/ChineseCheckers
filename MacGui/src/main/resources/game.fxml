@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="JoinGame" layoutX="100.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickJG" prefWidth="80.0" text="Join Game" textAlignment="CENTER">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nickfield" layoutX="10.0" layoutY="3.0" prefHeight="19.0" prefWidth="80.0" promptText="Your Nick">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="infofield" editable="false" layoutX="190.0" layoutY="3.0" prefHeight="19.0" prefWidth="160.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane" onMousePressed="#MousePress" onMouseReleased="#MouseRelease" prefHeight="625.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@plansza.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</VBox>
